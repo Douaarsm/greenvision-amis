@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navLinks = ['home', 'about', 'projects', 'team', 'blog', 'contact'];
@@ -49,9 +50,9 @@ export default function ResponsiveNavbar() {
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
             {navLinks.map((link) => (
-              <a key={link} href={`/${link === 'home' ? '' : link}`}>
+              <Link key={link} to={`/${link === 'home' ? '' : link}`}>
                 {t(link)}
-              </a>
+              </Link>
             ))}
             <LanguageSwitcher />
           </motion.div>

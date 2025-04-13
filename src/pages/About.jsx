@@ -10,23 +10,27 @@ const About = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="h5" gutterBottom>
-            Notre Mission
+          Notre Mission – Les Amis de Demain
           </Typography>
           <Typography paragraph>
-            Les Amis de Demain est une association dédiée à la promotion du bien-être
-            et de la santé pour tous. Notre mission est de créer un avenir meilleur
-            en favorisant des modes de vie sains et durables.
+          Notre mission est de semer les graines d’un avenir meilleur en accompagnant les jeunes, les enfants et les communautés vers un développement durable, équitable et solidaire.
+Nous œuvrons à travers des actions éducatives, culturelles, environnementales et sociales pour éveiller les consciences, renforcer les capacités et promouvoir l'engagement citoyen.
+
+Ensemble, construisons le demain que nous voulons voir.
+
+
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h5" gutterBottom>
-            Notre Vision
-          </Typography>
+          Notre Vision – Les Amis de Demain
+                    </Typography>
           <Typography paragraph>
-            Nous croyons en un monde où chaque individu a accès aux ressources
-            nécessaires pour mener une vie équilibrée et épanouissante. Notre vision
-            est de construire une communauté solidaire qui s'engage pour le bien-être
-            de tous.
+          Nous imaginons un avenir où les jeunes sont les moteurs du changement, porteurs de valeurs humaines, écologiques et solidaires.
+Notre vision est celle d’une société où chaque jeune est écouté, valorisé et accompagné pour devenir un citoyen actif, conscient de son impact sur le monde.
+À travers nos actions, nous rêvons de bâtir des communautés unies, responsables et engagées pour un avenir plus vert, plus juste et plus humain.
+
+
           </Typography>
         </Grid>
       </Grid>
