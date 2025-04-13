@@ -1,0 +1,129 @@
+/* Base Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--deep-green);
+    color: white;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--elegant-gold);
+  }
+  
+  /* Desktop */
+  @media (min-width: 768px) {
+    .nav-items {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    .nav-items a {
+      position: relative;
+      padding: 0.5rem 0;
+    }
+    
+    .nav-items a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--elegant-gold);
+      transition: width 0.3s ease;
+    }
+    
+    .nav-items a:hover::after {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 767px) {
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      background: var(--rich-black);
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 2rem;
+      gap: 2rem;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+    
+    .mobile-menu a {
+      padding: 1rem;
+      border-bottom: 1px solid var(--deep-green);
+    }
+  }
+  
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  [dir="rtl"] .mobile-menu {
+    right: auto;
+    left: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Language Switcher */
+  .language-switcher {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+  }
+  
+  .lang-btn.active {
+    background: rgba(212, 175, 55, 0.2);
+  }
+  
+  .flag {
+    font-size: 1.2rem;
+  }
+  
+  .label {
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 767px) {
+    .language-switcher {
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    
+    .label {
+      display: none;
+    }
+  }

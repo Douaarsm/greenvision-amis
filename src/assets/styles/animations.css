@@ -1,0 +1,167 @@
+/* 3D Flip Animation */
+@keyframes flip3D {
+  0% {
+    transform: perspective(1000px) rotateY(0);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+/* 3D Float Animation */
+@keyframes float3D {
+  0% {
+    transform: translateY(0) translateZ(0) rotateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateZ(20px) rotateX(5deg);
+  }
+  100% {
+    transform: translateY(0) translateZ(0) rotateX(0);
+  }
+}
+
+/* 3D Pulse Animation */
+@keyframes pulse3D {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* 3D Shake Animation */
+@keyframes shake3D {
+  0%, 100% {
+    transform: translateX(0) rotateY(0);
+  }
+  25% {
+    transform: translateX(-10px) rotateY(-5deg);
+  }
+  75% {
+    transform: translateX(10px) rotateY(5deg);
+  }
+}
+
+/* 3D Rotate Animation */
+@keyframes rotate3D {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+/* Animation Classes */
+.flip-3d {
+  animation: flip3D 1.5s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.float-3d {
+  animation: float3D 3s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.pulse-3d {
+  animation: pulse3D 2s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.shake-3d {
+  animation: shake3D 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.rotate-3d {
+  animation: rotate3D 2s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* Hover Effects */
+.hover-float-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.hover-float-3d:hover {
+  transform: translateY(-10px) translateZ(20px) rotateX(5deg);
+}
+
+.hover-flip-3d {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.hover-flip-3d:hover {
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+/* Card 3D Effect */
+.card-3d {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  transform: rotateY(10deg) rotateX(5deg) translateZ(10px);
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button 3D Effect */
+.button-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-3d:hover {
+  transform: translateY(-3px) translateZ(10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d:active {
+  transform: translateY(0) translateZ(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text 3D Effect */
+.text-3d {
+  text-shadow: 
+    1px 1px 0 #ccc,
+    2px 2px 0 #c9c9c9,
+    3px 3px 0 #bbb,
+    4px 4px 0 #b9b9b9,
+    5px 5px 0 #aaa,
+    6px 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Parallax Container */
+.parallax-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+/* Loading Spinner 3D */
+.spinner-3d {
+  animation: rotate3D 1.5s linear infinite;
+  transform-style: preserve-3d;
+}
