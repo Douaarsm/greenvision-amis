@@ -7,7 +7,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
-import Blog from './pages/Blog';
 import './assets/styles/app.css';
 import './assets/styles/responsive.css';
 import './assets/styles/components.css';
@@ -26,7 +25,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Suspense>
   );

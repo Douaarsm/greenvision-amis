@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const navLinks = ['home', 'about', 'projects', 'team', 'blog', 'contact'];
+const navLinks = ['home', 'about', 'projects', 'team', 'contact'];
 
 export default function ResponsiveNavbar() {
   const { t } = useTranslation();

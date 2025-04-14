@@ -5,20 +5,7 @@ import enTranslations from './assets/translations/en.json';
 import arTranslations from './assets/translations/ar.json';
 
 const resources = {
-  fr: {
-    translation: {
-      welcome: 'Bienvenue sur Les Amis de Demain',
-      mission: 'Promouvoir le bien-être et la santé pour tous',
-      join_cta: 'Rejoignez-nous',
-      loading: 'Chargement',
-      home: 'Accueil',
-      about: 'À propos',
-      projects: 'Projets',
-      team: 'Équipe',
-      blog: 'Blog',
-      contact: 'Contact'
-    }
-  },
+  fr: { translation: frTranslations },
   en: { translation: enTranslations },
   ar: { translation: arTranslations }
 };

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import InteractiveButton from './InteractiveButton';
 import ThreeDParticles from './ThreeDParticles';
 
@@ -25,9 +26,11 @@ export default function HeroSection() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <InteractiveButton>
-            {t('join_cta')}
-          </InteractiveButton>
+          <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <InteractiveButton>
+              {t('join_cta')}
+            </InteractiveButton>
+          </Link>
         </motion.div>
       </div>
     </section>
